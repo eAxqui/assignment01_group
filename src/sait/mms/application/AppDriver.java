@@ -11,7 +11,7 @@ public class AppDriver {
 		
 		Scanner sc = new Scanner(System.in);
 		MovieManager m = new MovieManager("res/movies.txt", sc);
-		m.loadMovieList();
+		m.displayMenu();
 		
 		while (true) {
 			// main menu options
