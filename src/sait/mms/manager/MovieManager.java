@@ -208,7 +208,7 @@ public class MovieManager {
                 if (value > 0) return value;
             } catch (NumberFormatException ignored) { }
 
-            System.out.println("Invalid input. Please enter a positive integer.");
+            System.out.println("Please enter a positive integer.");
         }
     }
 
