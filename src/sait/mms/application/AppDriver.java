@@ -22,21 +22,26 @@ public class AppDriver {
 			int choice = sc.nextInt();
 			
 			// input results
+			
+			// adding movie
 			if (choice == 1) {
-				// these have not been made yet
 				m.addMovie();
 				m.saveMovieListToFile();
 			}
+			// generate a movie list from particular year
 			else if (choice == 2) {
-				m.generateMovieListInYear(); // not made
+				m.generateMovieListInYear(); 
 			}
+			//generate a random movie list
 			else if (choice == 3) {
-				m.generateRandomMovieList(); // not made
+				m.generateRandomMovieList(); 
 			}
+			//exit program
 			else if (choice == 4) {
 				System.out.println("Exiting Program.");
 				break;
 			}
+			// to keep code from breaking from incorrect input
 			else {
 				System.out.println("Please Enter Valid Input.");
 			}
