@@ -15,7 +15,6 @@ public class AppDriver {
 		
 		while (true) {
 			// main menu options
-			m.displayMenu();
 			
 			// user input and choice
 			System.out.print("Please Enter Choice: ");
