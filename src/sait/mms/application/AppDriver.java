@@ -1,15 +1,17 @@
 package sait.mms.application;
- 
-import java.util.Scanner;
+
+
 import sait.mms.manager.MovieManager;
+import java.util.Scanner;
 import sait.mms.problemdomain.Movie;
 
 public class AppDriver {
 	
 	public static void main(String[] args) {
 		
-		MovieManager m = new MovieManager();
 		Scanner sc = new Scanner(System.in);
+		MovieManager m = new MovieManager("res/movies.txt", sc);
+		m.loadMovieList();
 		
 		while (true) {
 			// main menu options
@@ -23,7 +25,7 @@ public class AppDriver {
 			if (choice == 1) {
 				// these have not been made yet
 				m.addMovie();
-				m.saveMovieListToFiles();
+				m.saveMovieListToFile();
 			}
 			else if (choice == 2) {
 				m.generateMovieListInYear(); // not made
