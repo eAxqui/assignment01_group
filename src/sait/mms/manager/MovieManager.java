@@ -180,7 +180,7 @@ public class MovieManager {
                 if (value > 0) return value;
             } catch (NumberFormatException ignored) { }
 
-            System.out.println("Please enter a positive integer.");
+            //System.out.println("Please enter a positive integer.");
         }
     }
 
@@ -192,7 +192,7 @@ public class MovieManager {
                 s = s.trim();
                 if (!s.isEmpty()) return s;
             }
-            System.out.println("Invalid input. Title must not be empty.");
+            //System.out.println("Invalid input. Title must not be empty.");
         }
     }
 
