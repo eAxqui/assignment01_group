@@ -11,12 +11,11 @@ public class AppDriver {
 		
 		Scanner sc = new Scanner(System.in);
 		MovieManager m = new MovieManager("res/movies.txt", sc);
-		//m.displayMenu();
 		m.loadMovieList();
 		
 		while (true) {
 			// main menu options
-			
+			m.displayMenu();
 			// user input and choice
 			System.out.print("Please Enter Choice: ");
 			int choice = sc.nextInt();

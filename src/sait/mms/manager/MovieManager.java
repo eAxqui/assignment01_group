@@ -54,9 +54,6 @@ public class MovieManager {
 
     // MY DISPLAY TEST MENU SINCE THE MENU WAS OUTSOURCED TO MY GROUPMATE
     public void displayMenu() {
-        boolean running = true;
-
-        while (running) {
             System.out.println("Movie Management system");
             System.out.println();
             System.out.println("1\tAdd New Movie and Save");
@@ -65,31 +62,6 @@ public class MovieManager {
             System.out.println("4\tExit");
             System.out.println();
             System.out.print("Enter an option: ");
-
-            String input = scanner.nextLine().trim();
-            System.out.println();
-
-            int option;
-            try {
-                option = Integer.parseInt(input);
-            } catch (NumberFormatException ex) {
-                option = -1;
-            }
-
-            switch (option) {
-                case 1 -> addMovie();
-                case 2 -> generateMovieListInYear();
-                case 3 -> generateRandomMovieList();
-                case 4 -> {
-                    saveMovieListToFile();
-                    running = false;
-                }
-                default -> {
-                    System.out.println("Invalid option!");
-                    System.out.println();
-                }
-            }
-        }
     }
 
     public void addMovie() {
