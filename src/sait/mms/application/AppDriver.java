@@ -17,10 +17,7 @@ public class AppDriver {
 			// main menu options
 			m.displayMenu();
 			// user input and choice
-			System.out.print("Please Enter Choice: ");
 			int choice = sc.nextInt();
-			
-			// input results
 			
 			// adding movie
 			if (choice == 1) {
